@@ -120,6 +120,9 @@ public abstract class BaseListItemsAdapter<M extends ListItem, V extends CustomL
     }
 
     public void moveItem(int fromPosition, int toPosition) {
+        if(fromPosition == toPosition) {
+            return;
+        }
         if(getItemCount() <= fromPosition || getItemCount() <= toPosition || fromPosition < 0 || toPosition < 0) {
             return;
         }

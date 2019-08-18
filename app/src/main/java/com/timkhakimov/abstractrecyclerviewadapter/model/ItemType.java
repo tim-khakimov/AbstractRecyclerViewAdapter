@@ -6,7 +6,9 @@ package com.timkhakimov.abstractrecyclerviewadapter.model;
  */
 public enum ItemType {
 
-    UNDEFINED;
+    UNDEFINED,
+    LOADING_STATE,
+    EMPTY_LIST_CLAP;
 
     private int itemTypePosition;
 
