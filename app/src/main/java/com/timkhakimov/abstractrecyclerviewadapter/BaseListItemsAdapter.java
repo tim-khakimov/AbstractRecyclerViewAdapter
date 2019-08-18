@@ -9,11 +9,11 @@ import com.timkhakimov.abstractrecyclerviewadapter.model.ListItem;
 import com.timkhakimov.abstractrecyclerviewadapter.view.CustomListItemView;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
  * Created by Timur Khakimov on 18.08.2019
+ * adapter for using with particular model type
  */
 public abstract class BaseListItemsAdapter<M extends ListItem, V extends CustomListItemView> extends RecyclerView.Adapter<ItemHolder> {
 
